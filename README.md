@@ -22,7 +22,6 @@ A cross-platform command-line interface tool built with Python that works seamle
 Before installation, ensure you have:
 - Python 3.7 or higher
 - pip (Python package installer)
-- setuptools and wheel (will be installed automatically with pip)
 
 ### Method 1: Quick Install (Recommended)
 
