@@ -17,29 +17,40 @@ A cross-platform command-line interface tool built with Python that works seamle
 
 ## Installation
 
-### Method 1: Install from source (Recommended for local development)
+### Prerequisites
 
-1. Clone the repository:
+Before installation, ensure you have:
+- Python 3.7 or higher
+- pip (Python package installer)
+
+### Method 1: Quick Install (Recommended)
+
+This method automatically handles all build dependencies:
+
 ```bash
 git clone https://github.com/Akula452/akula-python-cli.git
 cd akula-python-cli
-```
-
-2. Install the package in development mode:
-```bash
 pip install -e .
 ```
 
-Or install with setup.py:
+### Method 2: Install with requirements file
+
 ```bash
-python setup.py develop
+git clone https://github.com/Akula452/akula-python-cli.git
+cd akula-python-cli
+pip install -r requirements.txt
+pip install -e .
 ```
 
-### Method 2: Install from requirements
+### Method 3: Using setup.py directly (for advanced users)
+
+**Note:** This method is only needed for specific build scenarios. Most users should use Method 1 instead.
+
+If you need to use setup.py directly and encounter import errors:
 
 ```bash
-pip install -r requirements.txt
-python setup.py install
+pip install --upgrade setuptools
+python setup.py develop
 ```
 
 ### Verification
