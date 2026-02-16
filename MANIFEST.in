@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include requirements.txt
+include pyproject.toml
+include install.sh
+include install.bat
+recursive-include examples *.sh *.bat
+recursive-include akula_cli *.py
