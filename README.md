@@ -43,9 +43,11 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### Method 3: Using setup.py directly
+### Method 3: Using setup.py directly (for advanced users)
 
-**Note:** If you encounter import errors with setup.py, install build dependencies first:
+**Note:** This method is only needed for specific build scenarios. Most users should use Method 1 instead.
+
+If you need to use setup.py directly and encounter import errors:
 
 ```bash
 pip install --upgrade setuptools wheel
