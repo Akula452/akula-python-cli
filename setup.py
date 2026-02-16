@@ -1,6 +1,16 @@
 """Setup script for Akula Python CLI."""
 
-from setuptools import setup, find_packages
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    import sys
+    print("Error: setuptools is not installed.", file=sys.stderr)
+    print("\nPlease install setuptools first:", file=sys.stderr)
+    print("  pip install --upgrade setuptools wheel", file=sys.stderr)
+    print("\nOr use the recommended installation method:", file=sys.stderr)
+    print("  pip install -e .", file=sys.stderr)
+    sys.exit(1)
+
 import os
 
 # Read the version from __init__.py
