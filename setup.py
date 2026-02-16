@@ -8,7 +8,7 @@ try:
 except ImportError:
     print("Error: setuptools is not installed.", file=sys.stderr)
     print("\nPlease install setuptools first:", file=sys.stderr)
-    print("  pip install --upgrade setuptools wheel", file=sys.stderr)
+    print("  pip install --upgrade setuptools", file=sys.stderr)
     print("\nOr use the recommended installation method:", file=sys.stderr)
     print("  pip install -e .", file=sys.stderr)
     sys.exit(1)

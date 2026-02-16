@@ -49,7 +49,7 @@ pip install -e .
 If you need to use setup.py directly and encounter import errors:
 
 ```bash
-pip install --upgrade setuptools wheel
+pip install --upgrade setuptools
 python setup.py develop
 ```
 
